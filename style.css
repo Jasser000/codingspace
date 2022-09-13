@@ -88,6 +88,10 @@
   .hide {
     display: none;
   }
+  #indice-container p{
+    color: #000000;
+  }
+  
   #result-text h2 {
     font-size: 1.8em;
     text-align: center;

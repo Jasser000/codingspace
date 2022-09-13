@@ -1,6 +1,7 @@
 //Initial References
 const letterContainer = document.getElementById("letter-container");
 const optionsContainer = document.getElementById("options-container");
+const indiceContainer=document.getElementById("indice-container")
 const userInputSection = document.getElementById("user-input-section");
 const newGameContainer = document.getElementById("new-game-container");
 const newGameButton = document.getElementById("new-game-button");
@@ -10,7 +11,6 @@ const resultText = document.getElementById("result-text");
 let options = {
     Hardware : [
     "Motherboard",
-    "DRAM",
     "Processor",
     "CMOS",
     "FPGA",
@@ -19,13 +19,23 @@ let options = {
     "NVMe",
     "RaspberryPi",
     "Nvidea",
-    "Bluray",
     "Chipset",
-    "Heatpipe",
-    ""
-    
+    "Heatpipe",    
   ],
-  Software: ["Blender","Windows","Android","LibreOffice","Fedora","Microsoft","Bios","Qtcreator","Opera","Brave","Mcafee","Ccleaner"],
+  Software: [
+  ["Blender","Used for 3D modelling ","Blender is a free and open-source 3D computer graphics software tool"],
+  ["Windows","Manages computer hardware ","Windows is a desktop operating system developed by Microsoft"]
+  //"Android",
+  //"LibreOffice"
+  //,"Fedora"
+  //,"Microsoft"
+  //,"Bios"
+  //,"Qtcreator"
+  //,"Opera"
+  //,"Brave"
+  //,"Mcafee"
+  //,"Ccleaner"
+],
   Networking: [
     "Internet",
     "Router",
@@ -46,6 +56,9 @@ let options = {
 let winCount = 0;
 let count = 0;
 let chosenWord = "";
+let chosenWordIndice = "";
+let chosenWordDef = "";
+let chosenWordData=[];
 //Display option buttons
 const displayOptions = () => {
   optionsContainer.innerHTML += `<h3>Please Select An Option</h3>`;
@@ -86,8 +99,10 @@ const generateWord = (optionValue) => {
     userInputSection.innerText = "";
     let optionArray = options[optionValue];
     //choose random word
-    chosenWord = optionArray[Math.floor(Math.random() * optionArray.length)];
-    chosenWord = chosenWord.toUpperCase();
+    chosenWordData = optionArray[Math.floor(Math.random() * optionArray.length)];
+    chosenWord = chosenWordData[0].toUpperCase();
+    chosenWordIndice=chosenWordData[1];
+    chosenWordDef = chosenWordData[2];
     //replace every letter with span containing dash
     let displayItem = chosenWord.replace(/./g, '<span class="dashes">_</span>');
     //Display each element as span
@@ -100,6 +115,8 @@ const initializer = () => {
     //Initially erase all content and hide letteres and new game button
     userInputSection.innerHTML = "";
     optionsContainer.innerHTML = "";
+    indiceContainer.innerHTML ="";
+   // indiceContainer.classList.add("hide");
     letterContainer.classList.add("hide");
     newGameContainer.classList.add("hide");
     letterContainer.innerHTML = "";
@@ -135,9 +152,13 @@ const initializer = () => {
           count += 1;
           //for drawing man
           drawMan(count);
+          if (count==3){
+            indiceContainer.classList.remove("hide");
+            indiceContainer.innerHTML =`<h5 class='win-msg'>Help:</h5><p><span>${chosenWordIndice}</span></p>`;
+          }
           //Count==6 because head,body,left arm, right arm,left leg,right leg
           if (count == 6) {
-            resultText.innerHTML = `<h2 class='lose-msg'>You Lose!!</h2><p>The word was <span>${chosenWord}</span></p>`;
+            resultText.innerHTML = `<h2 class='lose-msg'>You Lose!!</h2><h5><span>${chosenWordDef}</span></h5>`;
             blocker();
           }
         }
