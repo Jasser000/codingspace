@@ -35,19 +35,19 @@ let options = {
   ["Ccleaner","A utility software","Ccleaner is used to clean potentially unwanted files and invalid Windows Registry entries"],
 ],
   Networking: [
-    "Internet",
-    "Router",
-    "Server",
-    "Client",
-    "Protocol",
-    "Cable",
-    "Gateway",
-    "Localhost",
-    "Cloud",
-    "Html",
-    "Bittorrent",
-    "Https",
-    "Docker"
+    ["Internet","is an interconnection","Internet is a global computer network providing a variety of information and communication facilities"],
+    ["Router","A networking device","A router is a device that connects two or more packet-switched networks or subnetworks"],
+    ["Server","Provides data","A server is a computer designed to act as central repository and help in providing various resources like hardware access, disk space, printer access, etc,. to other computers in the network."],
+    ["Client","Receives data","A computer that connects to the server is called a client."],
+    ["Protocol","Allows commucation between devices","A network protocol is an established set of rules that determine how data is transmitted between different devices in the same network"],
+    ["Cable","Insures a type of connection ","Network cables are necessary to connect and transfer data and other information between computers, routers, and storage systems."],
+    ["Gateway","A network node","A gateway is a node that connects disparate networks by translating communications from one protocol to another."],
+    ["Localhost","Is an alias for the IP address 127.0. 0.1","When a computer pings this IP address, it is communicating with itself"],
+    ["Cloud","An increasingly popular service","Cloud computing is the delivery of different services through the Internet, including data storage, servers, databases, networking, and software."],
+    ["Html","A formatting system for displaying material retrieved over the Internet.","HTML, in full hypertext markup language, a formatting system for displaying material retrieved over the Internet."],
+    ["Bittorrent","A file transfer protocol","Bittorrent is a file transfer protocol which enables users to upload and download large files on the internet"],
+    ["Https","Used for exchanging files on the World Wide Web","HTTP, in full HyperText Transfer Protocol, standard application-level protocol used for exchanging files on the World Wide Web."],
+
   ],
 };
 //count
