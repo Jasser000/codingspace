@@ -25,16 +25,15 @@ let options = {
   Software: [
   ["Blender","Used for 3D modelling ","Blender is a free and open-source 3D computer graphics software tool"],
   ["Windows","Manages computer hardware ","Windows is a desktop operating system developed by Microsoft"]
-  //"Android",
-  //"LibreOffice"
-  //,"Fedora"
-  //,"Microsoft"
-  //,"Bios"
-  //,"Qtcreator"
-  //,"Opera"
-  //,"Brave"
-  //,"Mcafee"
-  //,"Ccleaner"
+  ["Android","Based on a modified version of the Linux kernel ","Android is a mobile operating system"]
+  ["LibreOffice","Consists of programs for word processing","LibreOffice is a free and open-source office productivity software suite"],
+  ["Fedora","A linux distribution","Fedora is a Linux distribution developed by the Fedora Project"],
+  ["Bios","Responsible for the booting process","Basic Input/Output System  is firmware used to provide runtime services for operating systems"],
+  ["Qtcreator","Used in GUI apps","Qt Creator is a cross-platform C++, JavaScript and QML integrated development environment"],
+  ["Opera","A web browser","Opera is a multi-platform web browser developed by its namesake company Opera"],
+  ["Brave","A web browser","Brave is a free and open-source web browser developed by Brave Software"],
+  ["Mcafee","An antivirus software"," McAfee LiveSafe integrates antivirus, firewall and anti-spyware"],
+  ["Ccleaner","A utility software","Ccleaner is used to clean potentially unwanted files and invalid Windows Registry entries"],
 ],
   Networking: [
     "Internet",
