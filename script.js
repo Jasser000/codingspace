@@ -10,17 +10,16 @@ const resultText = document.getElementById("result-text");
 //Options values for buttons
 let options = {
     Hardware : [
-    "Motherboard",
-    "Processor",
-    "CMOS",
-    "FPGA",
-    "Keyboard",
-    "Mainframe",
-    "NVMe",
-    "RaspberryPi",
-    "Nvidea",
-    "Chipset",
-    "Heatpipe",    
+    ["Motherboard","It holds and allows communication between many system components","Motherboard is the main printed circuit board in computers."],
+    ["Processor","Performs operations on an external data source","Processor is the logic circuitry that responds to and processes the basic instructions that drive a computer."],
+    ["CMOS","known as memory battery","The CMOS battery powers your laptop's BIOS firmware"],
+    ["FPGA","An integrated circuit","FPGAs have a remarkable role in embedded system development due to their capability to start system software development simultaneously with hardware"],
+    ["Keyboard","A peripheral input device","Keyboard is an input device modeled after the typewriter keyboard"],
+    ["Mainframe","A tpe of computers","Mainframe is used primarily by large organizations for critical applications like bulk data processing"],
+    ["NVMe","Storage protocol","is a new storage access and transport protocol for flash and next-generation solid-state drives "],
+    ["RaspberryPi","A micro-computer","The Raspberry Pi is a low cost, credit-card sized computer that plugs into a computer monitor or TV, and uses a standard keyboard and mouse."],
+    ["Chipset","An integrated circuit","Chipset isa highly integrated circuit on the motherboard of a computer that controls many of its data transfer functions"],
+    ["Heatpipe","Included in cooling","A heatpipe is a heat-transfer device that employs phase transition to transfer heat between two solid interfaces"],    
   ],
   Software: [
   ["Blender","Used for 3D modelling ","Blender is a free and open-source 3D computer graphics software tool"],
