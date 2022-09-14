@@ -24,7 +24,7 @@ let options = {
   ],
   Software: [
   ["Blender","Used for 3D modelling ","Blender is a free and open-source 3D computer graphics software tool"],
-  ["Windows","Manages computer hardware ","Windows is a desktop operating system developed by Microsoft"]
+  ["Windows","Manages computer hardware ","Windows is a desktop operating system developed by Microsoft"],
   ["Android","Based on a modified version of the Linux kernel ","Android is a mobile operating system"]
   ["LibreOffice","Consists of programs for word processing","LibreOffice is a free and open-source office productivity software suite"],
   ["Fedora","A linux distribution","Fedora is a Linux distribution developed by the Fedora Project"],
